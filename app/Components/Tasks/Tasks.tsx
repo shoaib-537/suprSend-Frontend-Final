@@ -13,7 +13,6 @@ import crypto from "crypto";
 interface Props {
   title: string;
   tasks: any[];
-  data: any[];
 }
 interface HmacParams {
   distinct_id: string;
@@ -33,7 +32,7 @@ function hmac_rawurlsafe_base64_string({
     .replace(/=+$/, "");
 }
 
-function Tasks({ title, tasks, data }: Props) {
+function Tasks({ title, tasks }: Props) {
   const { theme, isLoading, openModal, modal } = useGlobalState();
   const { user } = useUser();
   const userId: string = user?.id ?? "default";

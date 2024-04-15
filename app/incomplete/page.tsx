@@ -24,7 +24,7 @@ function page() {
     fetchData();
   }, []);
   const { incompleteTasks } = useGlobalState();
-  return <Tasks title="Incomplete Tasks" tasks={incompleteTasks} data={data}/>;
+  return <Tasks title="Incomplete Tasks" tasks={incompleteTasks}/>;
 }
 
 export default page;

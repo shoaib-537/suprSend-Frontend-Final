@@ -26,5 +26,5 @@ export default function Home() {
   }, []);
   const { tasks } = useGlobalState();
 
-  return <Tasks title="All Tasks" tasks={tasks} data={data} />;
+  return <Tasks title="All Tasks" tasks={tasks} />;
 }
